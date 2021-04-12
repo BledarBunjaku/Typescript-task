@@ -1,0 +1,185 @@
+.company-container {
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0 2px 5px #e7e9ec;
+    background-color: white;
+
+    .company-info {
+        width: 180px;
+        margin: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        .company-rank {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .rank {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 9px solid #ccd2d7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #eee;
+                background-color: black;
+            }
+        }
+        .company-logo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .logo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .image {
+                    margin-top: 10px;
+                    width: 71%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h3 {
+                    padding: 3px 0 0 0;
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #2f8cff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .company-menu {
+        width: 200px;
+        margin: 0 5px;
+        flex: 1;
+        div {
+            padding: 22px 10px 6px 22%;
+            h3 {
+                height: 45px;
+                border: 2px dashed #0c2d48;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 7px 0;
+                color: #0c2d48;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #3b5a73;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+
+    .company-efforts {
+        width: 200px;
+        margin: 0 5px;
+        flex: 1;
+        div {
+            padding: 20px 0 30px 20%;
+            p {
+                color: #3b5a73;
+                font-size: 16px;
+                margin: 0;
+                span {
+                    padding: 0 10px;
+
+                    * {
+                        color: #23db37;
+                    }
+                }
+            }
+        }
+    }
+    .company-website {
+        width: 200px;
+        margin: 0 5px;
+        flex: 0.7;
+        div {
+            padding: 15px 0 0 10%;
+            text-align: center;
+            p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            button {
+                width: 80%;
+                min-width: 125px;
+                height: 45px;
+                color: #fff;
+                background-color: #ffb900;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .company-container {
+        flex-direction: column;
+        max-width: 460px;
+        padding: 15px 10px;
+        .company-info {
+            width: 90%;
+            flex-direction: row-reverse;
+            .company-rank {
+                justify-content: flex-end;
+            }
+            .company-logo {
+                width: 100%;
+                .logo {
+                    width: 170px;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .image {
+                        margin: 0;
+                        width: 43px;
+                        padding: 5px 0 0 7px;
+                    }
+                    .logo-name {
+                        width: 150px;
+                        padding-left: 25px;
+                        h3 {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .company-menu,
+        .company-efforts,
+        .company-website {
+            width: 90%;
+            div {
+                padding: 20px 0;
+            }
+        }
+        .company-website {
+            width: 90%;
+            div {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

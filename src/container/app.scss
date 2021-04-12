@@ -1,0 +1,27 @@
+body {
+    background-color: #f5f5f5;
+}
+.app-container {
+    .header {
+        padding: 20px;
+        text-align: center;
+        background-color: white;
+        .active {
+            color: white;
+            background-color: #c0c2c5;
+        }
+
+        a {
+            text-decoration: none;
+            border: 2px solid rgb(173, 173, 173);
+            border-radius: 3px;
+            margin: 10px;
+            padding: 3px 15px;
+            color: #c0c2c5;
+            &:hover {
+                color: white;
+                background-color: #c0c2c5;
+            }
+        }
+    }
+}
