@@ -5,6 +5,8 @@ export interface ChildProps {
     rank: number
     type: string
     source: string
+    addOrder: (param: number) => any
+    index: number
 }
 
 export interface EmployeeProps {

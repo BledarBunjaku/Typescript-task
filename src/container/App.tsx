@@ -1,4 +1,3 @@
-
 import "./app.scss"
 import Employees from '../components/Employees/employees'
 import Companies from '../components/Companies/companies'
