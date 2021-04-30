@@ -15,6 +15,10 @@ export interface EmployeeProps {
     lName: string
     key: number
     email: string
+    deleteHandler: any
+    changeName: any
+    id: string
+    editUser: any
 }
 
 export interface UserType {
