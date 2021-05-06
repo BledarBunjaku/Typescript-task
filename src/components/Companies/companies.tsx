@@ -97,9 +97,6 @@ const Main = () => {
   //   />
   // })
 
-
-
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -128,8 +125,6 @@ const Main = () => {
     </div>
   );
 
-
-
   useEffect(() => {
     axios.get(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`)
       .then(response => {
@@ -137,13 +132,6 @@ const Main = () => {
         setRecipes([...response.data.hits])
       })
   }, [])
-
-
-
-  // const showOrders = () => {
-
-  //     }
-
 
   console.log("ordersss", orders)
 
